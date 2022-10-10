@@ -46,7 +46,7 @@ function setup() {
 function keyPressed(){
 
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball, {x:0, y:0}, {x:0.2, y:-0.3} )
+		Matter.Body.applyForce(ball, {x:0, y:0}, {x:10, y:-5} )
 	}
 	
 }
@@ -63,7 +63,7 @@ function draw() {
 
   ellipse(ball.position.x, ball.position.y, 20)
 
-  keyPressed()
+  
   
   drawSprites();
  
